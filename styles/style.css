@@ -92,8 +92,8 @@ button {
 }
 
 .logo img {
-  width: 72px;
-  height: 72px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
   border-radius: 50%;
 }
@@ -157,7 +157,8 @@ button {
   box-shadow: 0 14px 32px rgba(0, 40, 100, 0.28);
 }
 
-/* ========== BURGER ========== */
+/* ================= BURGER ================= */
+
 .burger {
   display: none;
   width: 34px;
@@ -166,7 +167,7 @@ button {
   justify-content: center;
   gap: 6px;
   border: none;
-  background:transparent;
+  background: transparent;
   cursor: pointer;
 }
 
@@ -180,10 +181,10 @@ button {
 }
 
 .burger.active span:nth-child(1) {
-  transform: translateY(9px); rotate: (45deg);
+  transform: translateY(9px) rotate(45deg);
 }
 
-.burger.span:nth-child(2) {
+.burger.active span:nth-child(2) {
   opacity: 0;
 }
 
@@ -191,17 +192,20 @@ button {
   transform: translateY(-9px) rotate(-45deg);
 }
 
-/* ========= HERO ========== */
+/* ================= HERO ================= */
+
 .hero {
-position: relative;
-padding: 10px 0 130px;
-background: radial-gradient(circle at 80% 15%, rgba(255, 255, 255, 0.25), transparent 22%), linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark)55%, var(--color-primary-deep) 100%);
-color: var(--color-secondary);
-overflow: hidden;
+  position: relative;
+  padding: 230px 0 140px;
+  background:
+    radial-gradient(circle at 80% 15%, rgba(255, 255, 255, 0.25), transparent 22%),
+    linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 55%, var(--color-primary-deep) 100%);
+  color: var(--color-secondary);
+  overflow: hidden;
 }
 
 .hero::before {
-  content: " ";
+  content: "";
   position: absolute;
   right: -180px;
   top: 70px;
@@ -210,27 +214,26 @@ overflow: hidden;
   border: 3px solid rgba(255, 255, 255, 0.28);
   border-radius: 50%;
   transform: rotate(-25deg);
-
 }
 
 .hero::after {
-  content: " ";
+  content: "";
   position: absolute;
   left: -5%;
   bottom: -120px;
   width: 110%;
   height: 260px;
   background: var(--color-bg);
-  border-radius: 50% 50% 00 / 70% 70% 0 0;
+  border-radius: 50% 50% 0 0 / 70% 70% 0 0;
 }
 
 .hero__inner {
-position: relative;
-z-index: 2;
-display: grid;
-grid-template-columns: 1fr 1fr;
-align-items: center;
-gap: 40px;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
 }
 
 .hero__badge {
@@ -254,12 +257,12 @@ gap: 40px;
 }
 
 .hero__subtitle {
-max-width: 520px;
-font-size: clamp(22px, 3vw, 34px);
-line-height: 1.15;
-font-weight: 800;
-text-transform: uppercase;
-margin-bottom: 34px;
+  max-width: 520px;
+  font-size: clamp(22px, 3vw, 34px);
+  line-height: 1.15;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 34px;
 }
 
 .hero__features {
@@ -269,7 +272,7 @@ margin-bottom: 34px;
   margin-bottom: 34px;
 }
 
-.hero__features {
+.hero__feature {
   padding-left: 14px;
   border-left: 1px solid rgba(255, 255, 255, 0.4);
   font-size: 14px;
@@ -308,46 +311,51 @@ margin-bottom: 34px;
 }
 
 .hero__jersey--front {
-  left: 40px;
-  top: 70px;
+  left: 20px;
+  top: 95px;
   z-index: 2;
 }
 
 .hero__jersey--back {
-  right: 20px;
-  top: 30px;
+  right: 40px;
+  top: 55px;
   z-index: 1;
 }
 
 .price-badge {
   position: absolute;
-  right: 0;
-  bottom: 35px;
-  width: 170px;
-  height: 170px;
-border: 5px solid var(--color-secondary);
-border-radius: 50%;
-background: var(--color-primary-deep);
-color: var(--color-secondary);
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-transform: uppercase;
-box-shadow: var(--shadow-strong);
-z-index: 3;
+  right: 10px;
+  bottom: 60px;
+  width: 185px;
+  height: 185px;
+  padding: 18px;
+  border: 5px solid var(--color-secondary);
+  border-radius: 50%;
+  background: var(--color-primary-deep);
+  color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.1;
+  text-transform: uppercase;
+  box-shadow: var(--shadow-strong);
+  z-index: 3;
 }
 
 .price-badge span {
-  font-size: 32px;
+  font-size: 13px;
+  line-height: 1.2;
   font-weight: 800;
 }
- .price-badge strong {
-  font-size: 32px;
-  line-height: 1.1;
- }
 
- /* ================= TRIKOTS ================= */
+.price-badge strong {
+  font-size: 26px;
+  line-height: 1;
+}
+
+/* ================= TRIKOTS ================= */
 
 .trikots {
   padding: 80px 0;
@@ -412,4 +420,95 @@ z-index: 3;
   color: var(--color-primary-dark);
   font-weight: 900;
   text-transform: uppercase;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .trikot-grid--two {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 16px 0;
+  }
+
+  .logo img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    padding: 24px 0;
+    background: var(--color-primary-dark);
+    box-shadow: var(--shadow-card);
+  }
+
+  .nav.active {
+    display: block;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header__cta {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .hero {
+    padding: 165px 0 110px;
+  }
+
+  .hero__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero__visual {
+    min-height: 330px;
+  }
+
+  .hero__jersey {
+    max-width: 180px;
+  }
+
+  .hero__jersey--front {
+    left: 10px;
+    top: 70px;
+  }
+
+  .hero__jersey--back {
+    right: 10px;
+    top: 40px;
+  }
+
+  .price-badge {
+    width: 125px;
+    height: 125px;
+    right: 15px;
+    bottom: 20px;
+    padding: 12px;
+  }
+
+  .price-badge strong {
+    font-size: 21px;
+  }
+
+  .price-badge span {
+    font-size: 11px;
+  }
 }
