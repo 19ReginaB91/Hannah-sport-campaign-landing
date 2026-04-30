@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Hanna Sport | Trikot-Aktion</title>
+  <title>Hanna Sport | WM 2026 Trikot-Aktion</title>
 
   <link rel="stylesheet" href="styles/style.css" />
 </head>
@@ -14,7 +14,7 @@
     <div class="container header__inner">
 
       <a href="#" class="logo" aria-label="Hanna Sport Startseite">
-        <img src="assets/images/hanna-logo.png" alt="Hanna Sport Logo" />
+        <img src="assets/images/hanna-logo.png" alt="Hanna Sport Logo">
       </a>
 
       <nav class="nav" aria-label="Main navigation">
@@ -22,10 +22,11 @@
           <li><a href="#trikots" class="nav__link">Trikots</a></li>
           <li><a href="#aktion" class="nav__link">Aktion</a></li>
           <li><a href="#gewinnspiel" class="nav__link">Gewinnspiel</a></li>
+          <li><a href="#zeitraum" class="nav__link">Zeitraum</a></li>
         </ul>
       </nav>
 
-      <a href="#trikots" class="header__cta">Jetzt kaufen</a>
+      <a href="#" class="header__cta">Jetzt kaufen</a>
 
       <button class="burger" type="button" aria-label="Menü öffnen">
         <span></span>
@@ -47,18 +48,27 @@
           <h1 class="hero__title">Trikot-Aktion</h1>
 
           <p class="hero__subtitle">
-            Trage dein Team. Gewinne Großes. Sei dabei!
+            Trage dein Team. Gewinne Großes.
           </p>
 
           <div class="hero__features">
-            <div class="hero__feature">Exklusive Designs</div>
-            <div class="hero__feature">Nur 9,99 €</div>
-            <div class="hero__feature">Tägliche Gewinnspiele</div>
+            <div class="hero__feature">
+              <span>👕</span>
+              <p>Exklusive Designs</p>
+            </div>
+
+            <div class="hero__feature">
+              <span>🏷️</span>
+              <p>Nur 9,99 €</p>
+            </div>
+
+            <div class="hero__feature">
+              <span>🎁</span>
+              <p>Tägliche Gewinnspiele</p>
+            </div>
           </div>
 
-          <a href="#trikots" class="hero__cta">
-            Jetzt Trikot sichern
-          </a>
+          <a href="#" class="hero__cta">Jetzt Trikot sichern</a>
         </div>
 
         <div class="hero__visual">
@@ -87,32 +97,169 @@
     <section class="trikots" id="trikots">
       <div class="container">
 
-        <h2 class="section-title">Deutschland-Trikots</h2>
+        <h2 class="section-title">Wähle dein Team</h2>
 
         <p class="section-subtitle">
-          Zwei exklusive Designs für die WM 2026 Aktion
+          Aktuell startet die Aktion mit dem Deutschland-Trikot. Weitere Ländertrikots folgen.
         </p>
 
-        <div class="trikot-grid trikot-grid--two">
+        <div class="trikot-grid">
 
-          <article class="trikot-card">
-            <img src="assets/images/jersey-front1.jpeg" alt="Deutschland Trikot Design 1">
-            <h3>Design 1</h3>
+          <article class="trikot-card trikot-card--active">
+            <img src="assets/images/jersey-front1.jpeg" alt="Deutschland Trikot">
+            <p>🇩🇪 Deutschland</p>
           </article>
 
-          <article class="trikot-card">
-            <img src="assets/images/jersey-front2.jpeg" alt="Deutschland Trikot Design 2">
-            <h3>Design 2</h3>
+          <article class="trikot-card trikot-card--coming">
+            <img src="assets/images/jersey-front1.jpeg" alt="Türkei Trikot">
+            <p>🇹🇷 Türkei</p>
+            <span>Folgt</span>
+          </article>
+
+          <article class="trikot-card trikot-card--coming">
+            <img src="assets/images/jersey-front1.jpeg" alt="Portugal Trikot">
+            <p>🇵🇹 Portugal</p>
+            <span>Folgt</span>
+          </article>
+
+          <article class="trikot-card trikot-card--coming">
+            <img src="assets/images/jersey-front1.jpeg" alt="Brasilien Trikot">
+            <p>🇧🇷 Brasilien</p>
+            <span>Folgt</span>
+          </article>
+
+          <article class="trikot-card trikot-card--coming">
+            <img src="assets/images/jersey-front1.jpeg" alt="Spanien Trikot">
+            <p>🇪🇸 Spanien</p>
+            <span>Folgt</span>
           </article>
 
         </div>
 
-        <a href="#" class="outline-btn">Jetzt kaufen</a>
+        <a href="#" class="outline-btn">Zum Shop</a>
+
+      </div>
+    </section>
+
+    <section class="gewinnspiel" id="gewinnspiel">
+      <div class="container">
+
+        <h2 class="section-title">Gewinnspiel – Jeder Kauf gewinnt!</h2>
+
+        <p class="section-subtitle">
+          Alle Käufer nehmen automatisch an unseren Verlosungen teil.
+        </p>
+
+        <div class="prize-grid">
+
+          <article class="prize-card">
+            <span class="date-badge">10.06.2026</span>
+            <h3>Hauptverlosung</h3>
+            <p>Hochwertige Preise</p>
+            <div class="prize-image">🏆</div>
+          </article>
+
+          <article class="prize-card">
+            <span class="date-badge">11.06.2026</span>
+            <h3>WM-Eröffnungsspecial</h3>
+            <p>Verlosung eines offiziellen Spielballs</p>
+            <div class="prize-image">⚽</div>
+          </article>
+
+          <article class="prize-card">
+            <span class="date-badge">Ab 12.06.2026</span>
+            <h3>Tägliche Gewinnspiele</h3>
+            <p>Täglich Preise im Wert von 20 €</p>
+            <div class="prize-image">🎁</div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="timeline" id="zeitraum">
+      <div class="container">
+
+        <h2 class="section-title">Aktionszeitraum</h2>
+
+        <div class="timeline-grid">
+
+          <div class="timeline-item">
+            <div class="timeline-icon">⏳</div>
+            <strong>01.05.2026</strong>
+            <p>Start der Aktion</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">🎁</div>
+            <strong>10.06.2026</strong>
+            <p>Hauptverlosung</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">⚽</div>
+            <strong>11.06.2026</strong>
+            <p>WM-Eröffnungsspecial</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">📅</div>
+            <strong>Ab 12.06.2026</strong>
+            <p>Tägliche Aktionen</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="bottom-cta">
+      <div class="container bottom-cta__inner">
+
+        <div>
+          <h2>Trikots sichern & gewinnen!</h2>
+          <p>
+            Nur für kurze Zeit – sichere dir jetzt dein Trikot und sei Teil der WM 2026 Aktion.
+          </p>
+        </div>
+
+        <a href="#" class="bottom-cta__button">Jetzt kaufen</a>
 
       </div>
     </section>
 
   </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <a href="#" class="footer-logo">
+        <img src="assets/images/hanna-logo.png" alt="Hanna Sport Logo">
+      </a>
+
+      <div class="footer-column">
+        <h3>Kontakt</h3>
+        <p>info@hanna-sport.de</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Rechtliches</h3>
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Folge uns</h3>
+        <div class="socials">
+          <a href="#">IG</a>
+          <a href="#">FB</a>
+          <a href="#">TT</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
 
   <script src="script/script.js"></script>
 </body>

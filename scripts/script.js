@@ -1,9 +1,7 @@
-// Select mobile menu elements
-const burger= document.querySelector('.burger');
-const nav = document.querySelector('.nav');
+const burger = document.querySelector(".burger");
+const nav = document.querySelector(".nav");
 
-// Toggle mobile navigation
-burger.addEventListener('click', () => {
-burger.classList.toggle('active');
-nav.classList.toggle('active');
+burger.addEventListener("click", () => {
+  burger.classList.toggle("active");
+  nav.classList.toggle("active");
 });
